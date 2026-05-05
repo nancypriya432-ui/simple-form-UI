@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Form</title>
+
+    <style>
+
+        body{
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container{
+            width: 450px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: darkblue;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 430PX;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        textarea{
+            resize: 100px 100px;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            margin-bottom: 15px;
+        }
+
+        .radio-group input,
+        .checkbox-group input{
+            width: auto;
+        }
+
+        input[type="submit"]{
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover{
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>COLLEGE FORM</h2>
+
+        <form>
+
+            <!-- Name -->
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your Name" required>
+
+            <!-- Email -->
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your Email Address" required>
+
+            <!-- Phone -->
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your Phone Number">
+
+            <!-- State -->
+            <label>Select State:</label>
+
+            <select name="States">
+
+                <option value="">Select State</option>
+
+                <option value="Bihar">Bihar</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="UP">UP</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Other States">Other States</option>
+
+            </select>
+
+            <!-- Radio Buttons -->
+            <div class="radio-group">
+
+                <label>How do you know about University?</label>
+                <br><br>
+
+                <input type="radio" value="YouTube" name="source"> YouTube
+                <br>
+
+                <input type="radio" value="Social Media" name="source"> Social Media
+                <br>
+
+                <input type="radio" value="Others" name="source"> Others
+
+            </div>
+
+            <!-- Course -->
+            <label>Select Course:</label>
+
+            <select name="Courses">
+
+                <option value="">Select Course</option>
+
+                <option value="BTech CSE">B.Tech CSE</option>
+                <option value="BTech AI">B.Tech AI</option>
+                <option value="MTech">M.Tech CSE</option>
+                <option value="BSc">BSc</option>
+                <option value="Others">Others</option>
+
+            </select>
+
+            <!-- Qualification -->
+            <div class="checkbox-group">
+
+                <label>Qualification:</label>
+                <br><br>
+
+                <input type="checkbox" value="Class X"> Class X
+
+                <input type="checkbox" value="Class XII"> Class XII
+
+            </div>
+
+            <!-- Textarea -->
+            <label>Any Query:</label>
+
+            <textarea rows="5" placeholder="Any query related to college"></textarea>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
